@@ -67,8 +67,9 @@ The orignal data presented include two charts (2017 & 2018) with stock informati
     RowCount = Cells(Rows.Count, "A").End(xlUp).Row
     
     '1a) Create a ticker Index
+ <sub> 
    For i = 0 To 11
-       tickerIndex = tickers(i)
+       tickerIndex = tickers(i)  </sub>
        
        
     '1b) Create three output arrays
@@ -126,10 +127,8 @@ The orignal data presented include two charts (2017 & 2018) with stock informati
                         '.Value = .Value
             'End With
             
-
-   Next i
+<sub> Next i 
  
-   
     'Formatting
     Worksheets("All Stocks Analysis").Activate
     Range("A3:C3").Font.FontStyle = "Bold"
